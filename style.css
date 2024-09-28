@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light grey background, like a typical office setting */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#Calculator_Title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    align-items: center;
+    padding: 2px 2px;
+    margin-left: 5%;
+}
+
+.calculator {
+    background-color: rgb(255, 187, 187); /* White background for the calculator */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    background-color: #fff; /* White display background */
+    border: 1px solid #ccc; /* Light grey border around the display */
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 24px;
+    color: #333; /* Darker text for better readability */
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    background-color: #6d322c; /* Red color similar to Deli W1589 */
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 18px;
+    color: #fff; /* White text */
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.button:hover {
+    background-color: #c0392b; /* Darker shade of red on hover */
+}
+
+.button.enter {
+    background-color: #ea3939; /* Distinct color for the ENTER button, using a green color */
+    grid-column: span ; /* Spanning across all columns for emphasis */
+}

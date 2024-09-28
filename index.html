@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main calculator container -->
+    <div class="calculator">
+        <!-- Display area for calculations -->
+        <div class="display">
+            <div id="expression"></div> <!-- Displays the ongoing operation -->
+            <div id="result"></div> <!-- Displays the result -->
+        </div>
+        <!-- Calculator title for aesthetic purpose -->
+        <div id="Calculator_Title">
+            <caption>Simple Calculator</caption>
+        </div>
+        <!-- Container for calculator buttons -->
+        <div class="buttons">
+            <!-- Each button has a data-value attribute that holds the button value -->
+            <!-- Button rows -->
+            <button class="button" data-value="(">(</button>
+            <button class="button" data-value=")">)</button>
+            <!-- 'ans' can be used to use the last calculation result -->
+            <button class="button" data-value="ans">ans</button>
+            <!-- 'del' will delete the last digit or operation entered -->
+            <button class="button" data-value="del">del</button>
+            <!-- Numeric and operation buttons -->
+            <button class="button" data-value="7">7</button>
+            <button class="button" data-value="8">8</button>
+            <button class="button" data-value="9">9</button>
+            <button class="button" data-value="%">%</button>
+            <!-- More numeric and operation buttons -->
+            <button class="button" data-value="4">4</button>
+            <button class="button" data-value="5">5</button>
+            <button class="button" data-value="6">6</button>
+            <button class="button" data-value="*">x</button>
+            <button class="button" data-value="1">1</button>
+            <button class="button" data-value="2">2</button>
+            <button class="button" data-value="3">3</button>
+            <button class="button" data-value="/">÷</button>
+            <!-- Buttons for decimal, zero, positive/negative toggle, and calculation execution -->
+            <button class="button" data-value=".">.</button>
+            <button class="button" data-value="0">0</button>
+            <button class="button" data-value="±">±</button>
+            <!-- Enter button executes the calculation -->
+            <button class="button enter" data-value="=">=</button>
+            <!-- Addition and subtraction operations -->
+            <button class="button" data-value="+">+</button>
+            <button class="button" data-value="-">-</button>
+            <!-- Square root operation -->
+            <button class="button" data-value="sqrt">√</button>
+            <!-- Clear all current operations and results -->
+            <button class="button" data-value="clear">clear</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
